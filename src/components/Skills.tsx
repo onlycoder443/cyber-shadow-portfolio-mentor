@@ -1,6 +1,6 @@
 
 import { Card } from "@/components/ui/card";
-import { Code, Database, Network, Terminal } from "lucide-react";
+import { Code, Database, Network, Terminal, FileCode } from "lucide-react";
 
 const skills = [
   {
@@ -26,6 +26,12 @@ const skills = [
     icon: Terminal,
     description: "System administration, command line, and security hardening",
     level: 85
+  },
+  {
+    name: "C",
+    icon: FileCode,
+    description: "Systems programming and low-level development",
+    level: 75
   }
 ];
 
@@ -42,7 +48,7 @@ const Skills = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {skills.map((skill, index) => (
             <Card key={skill.name} className="bg-gray-900/50 border-gray-800 hover:border-green-500/50 transition-all duration-300 p-6 group hover:transform hover:scale-105">
               <div className="flex flex-col items-center text-center">

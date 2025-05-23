@@ -26,28 +26,29 @@ const Hero = () => {
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Enthusiastic Computer Science graduate specializing in Cybersecurity. 
-          Skilled in networking, Linux, Python and dedicated to continuous learning.
+          Hi, I'm Heartlin Gardon<br/>
+          🔐 Cybersecurity Enthusiast | Ethical Hacking Learner | Python Developer
+        </p>
+        
+        <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+          I'm focused on learning and building in the field of cybersecurity. I enjoy working on projects related to network security, ethical hacking, and secure coding. Explore my portfolio to see what I've been working on and where I'm headed next.
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Button className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105">
+          <Button 
+            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
+            onClick={() => {
+              const projectsSection = document.getElementById('projects');
+              projectsSection?.scrollIntoView({ behavior: 'smooth' });
+            }}
+          >
             View My Work
-          </Button>
-          <Button variant="outline" className="border-green-500 text-green-400 hover:bg-green-500/10 px-8 py-3 rounded-full transition-all duration-300">
-            Download CV
           </Button>
         </div>
         
         <div className="flex flex-col items-center space-y-3 mb-8">
           <p className="text-gray-400">
-            <span className="font-semibold text-green-400">Email:</span> heartlingardon07@gmail.com
-          </p>
-          <p className="text-gray-400">
-            <span className="font-semibold text-green-400">Phone:</span> +91 9791623351
-          </p>
-          <p className="text-gray-400">
-            <span className="font-semibold text-green-400">Location:</span> Alagu Nagar, Mengles Road, Dindigul - 624003
+            <span className="font-semibold text-green-400">Location:</span> Kumaran Nagar, Shollinganallur, Chennai-600119
           </p>
         </div>
         

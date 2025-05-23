@@ -4,7 +4,7 @@ import { GraduationCap, Users, BookOpen } from "lucide-react";
 
 const experiences = [
   {
-    title: "Bachelor of Technology - Information Technology",
+    title: "Bachelor of Engineering - CSE Cyber Security",
     icon: GraduationCap,
     period: "2021 - 2025",
     description: "Sathyabama Institute of Science and Technology",
@@ -15,7 +15,7 @@ const experiences = [
     icon: BookOpen,
     period: "2021 - Present",
     description: "Professional certifications to enhance cybersecurity knowledge",
-    highlights: ["Ethical Hacking - ACTE", "CS50 Python - Harvard", "Cyber Security 101 - TryHackMe"]
+    highlights: ["Ethical Hacking - ACTE", "CS50 Python - Harvard", "C, C++ - NIIT"]
   },
   {
     title: "Mentoring & Knowledge Sharing",
