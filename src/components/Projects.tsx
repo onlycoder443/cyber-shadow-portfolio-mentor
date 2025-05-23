@@ -36,7 +36,7 @@ const Projects = () => {
     <section className="py-20 px-4 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-red-400 to-rose-400 bg-clip-text text-transparent">
             Projects
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -46,11 +46,11 @@ const Projects = () => {
         
         <div className="space-y-12">
           {projects.map((project, index) => (
-            <Card key={project.title} className="bg-gray-900/70 border-gray-800 hover:border-green-500/50 transition-all duration-300 p-8 group">
+            <Card key={project.title} className="bg-gray-900/70 border-gray-800 hover:border-red-500/50 transition-all duration-300 p-8 group">
               <div className="flex flex-col md:flex-row gap-8">
                 <div className="md:w-1/3 flex justify-center items-start">
-                  <div className="p-6 rounded-xl bg-gradient-to-r from-green-500/20 to-emerald-500/20 group-hover:from-green-500/30 group-hover:to-emerald-500/30 transition-all duration-300">
-                    <project.icon className="w-20 h-20 text-green-400" />
+                  <div className="p-6 rounded-xl bg-gradient-to-r from-red-500/20 to-rose-500/20 group-hover:from-red-500/30 group-hover:to-rose-500/30 transition-all duration-300">
+                    <project.icon className="w-20 h-20 text-red-400" />
                   </div>
                 </div>
                 
@@ -60,7 +60,7 @@ const Projects = () => {
                   
                   <div className="flex flex-wrap gap-2 mb-6">
                     {project.technologies.map((tech, idx) => (
-                      <span key={idx} className="text-sm px-3 py-1 rounded-full bg-green-500/10 text-green-400 border border-green-500/30">
+                      <span key={idx} className="text-sm px-3 py-1 rounded-full bg-red-500/10 text-red-400 border border-red-500/30">
                         {tech}
                       </span>
                     ))}
@@ -71,8 +71,8 @@ const Projects = () => {
                     <ul className="space-y-2">
                       {project.features.map((feature, idx) => (
                         <li key={idx} className="flex items-start">
-                          <div className="h-6 w-6 rounded-full bg-green-500/20 flex items-center justify-center mr-3 mt-0.5">
-                            <div className="h-2 w-2 rounded-full bg-green-400"></div>
+                          <div className="h-6 w-6 rounded-full bg-red-500/20 flex items-center justify-center mr-3 mt-0.5">
+                            <div className="h-2 w-2 rounded-full bg-red-400"></div>
                           </div>
                           <span className="text-gray-300">{feature}</span>
                         </li>
@@ -84,7 +84,7 @@ const Projects = () => {
                     {project.github && (
                       <Button 
                         variant="outline" 
-                        className="border-green-500/50 text-green-400 hover:bg-green-500/10"
+                        className="border-red-500/50 text-red-400 hover:bg-red-500/10"
                         onClick={() => window.open(project.github, '_blank')}
                       >
                         <Github className="mr-2 h-4 w-4" /> View on GitHub

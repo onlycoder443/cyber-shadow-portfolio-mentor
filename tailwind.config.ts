@@ -96,31 +96,31 @@ export default {
 				},
 				'glitch': {
 					'0%': { 
-						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						textShadow: '0.05em 0 0 rgba(185, 16, 16, 0.75), -0.05em -0.025em 0 rgba(185, 16, 16, 0.75)',
 						transform: 'translate3d(0, 0, 0)' 
 					},
 					'10%': { 
-						textShadow: '-0.05em -0.025em 0 rgba(16, 185, 129, 0.75), 0.025em 0.025em 0 rgba(16, 185, 129, 0.75)',
+						textShadow: '-0.05em -0.025em 0 rgba(185, 16, 16, 0.75), 0.025em 0.025em 0 rgba(185, 16, 16, 0.75)',
 						transform: 'translate3d(0, 0, 0)' 
 					},
 					'15%': { 
-						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						textShadow: '0.05em 0 0 rgba(185, 16, 16, 0.75), -0.05em -0.025em 0 rgba(185, 16, 16, 0.75)',
 						transform: 'translate3d(0.025em, 0, 0)' 
 					},
 					'49.9%': { 
-						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						textShadow: '0.05em 0 0 rgba(185, 16, 16, 0.75), -0.05em -0.025em 0 rgba(185, 16, 16, 0.75)',
 						transform: 'translate3d(0, 0, 0)' 
 					},
 					'50%': { 
-						textShadow: '0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75)',
+						textShadow: '0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(255, 0, 0, 0.75)',
 						transform: 'translate3d(0, 0, 0)' 
 					},
 					'99.9%': { 
-						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						textShadow: '0.05em 0 0 rgba(185, 16, 16, 0.75), -0.05em -0.025em 0 rgba(185, 16, 16, 0.75)',
 						transform: 'translate3d(0, 0, 0)' 
 					},
 					'100%': { 
-						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						textShadow: '0.05em 0 0 rgba(185, 16, 16, 0.75), -0.05em -0.025em 0 rgba(185, 16, 16, 0.75)',
 						transform: 'translate3d(0, 0, 0)' 
 					},
 				},

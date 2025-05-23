@@ -11,13 +11,13 @@ const Index = () => {
   // Terminal typing effect in console on load (hacker touch)
   useEffect(() => {
     const messages = [
-      "%c> Initializing system...",
-      "%c> Loading security modules...",
-      "%c> Scanning for vulnerabilities...",
-      "%c> System secure. Welcome to Heartlin Gardon's portfolio!"
+      "%c> System breach in progress...",
+      "%c> Bypassing security protocols...",
+      "%c> Accessing restricted files...",
+      "%c> Access granted. Welcome to Heartlin Gardon's domain!"
     ];
     
-    const style = "color: #10B981; font-family: monospace; font-size: 14px; font-weight: bold;";
+    const style = "color: #DC2626; font-family: monospace; font-size: 14px; font-weight: bold;";
     
     messages.forEach((msg, i) => {
       setTimeout(() => {
@@ -28,12 +28,12 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-900 via-black to-gray-900 relative">
-      {/* Matrix-inspired background effect */}
+      {/* Matrix-inspired background effect with red theme */}
       <div className="absolute top-0 left-0 w-full h-full overflow-hidden opacity-5 pointer-events-none">
         {Array.from({ length: 10 }).map((_, i) => (
           <div 
             key={i}
-            className="absolute text-green-500 text-opacity-30 whitespace-nowrap"
+            className="absolute text-red-500 text-opacity-30 whitespace-nowrap"
             style={{
               left: `${i * 10}%`,
               top: 0,
