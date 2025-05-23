@@ -5,12 +5,15 @@ import { Github, Linkedin, Mail, Shield } from "lucide-react";
 const Hero = () => {
   return (
     <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
-      {/* Background grid effect */}
+      {/* Matrix-like background effect */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
       
-      {/* Glowing orbs */}
+      {/* Terminal-like glowing effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse" />
       <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl animate-pulse delay-1000" />
+      
+      {/* Animated scanlines overlay */}
+      <div className="absolute inset-0 bg-[linear-gradient(to_bottom,transparent_50%,rgba(0,128,0,0.05)_50%)] bg-[length:100%_4px] animate-[scan_5s_linear_infinite] pointer-events-none"></div>
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="flex justify-center mb-8">
@@ -20,13 +23,10 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 bg-clip-text text-transparent animate-fade-in">
-          Heartlin Gardon B.F
-          <br />
-          <span className="text-white">Cybersecurity Fresher</span>
+          Hi, I'm HEARTLIN GARDON
         </h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-          Hi, I'm Heartlin Gardon<br/>
           🔐 Cybersecurity Enthusiast | Ethical Hacking Learner | Python Developer
         </p>
         
@@ -44,12 +44,6 @@ const Hero = () => {
           >
             View My Work
           </Button>
-        </div>
-        
-        <div className="flex flex-col items-center space-y-3 mb-8">
-          <p className="text-gray-400">
-            <span className="font-semibold text-green-400">Location:</span> Kumaran Nagar, Shollinganallur, Chennai-600119
-          </p>
         </div>
         
         <div className="flex justify-center space-x-6">

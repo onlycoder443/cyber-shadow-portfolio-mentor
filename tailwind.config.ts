@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -84,11 +85,56 @@ export default {
 					to: {
 						height: '0'
 					}
-				}
+				},
+				'scan': {
+					'0%': { backgroundPosition: '0 0' },
+					'100%': { backgroundPosition: '0 100%' }
+				},
+				'matrix-fall': {
+					'0%': { transform: 'translateY(-100%)' },
+					'100%': { transform: 'translateY(100vh)' }
+				},
+				'glitch': {
+					'0%': { 
+						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						transform: 'translate3d(0, 0, 0)' 
+					},
+					'10%': { 
+						textShadow: '-0.05em -0.025em 0 rgba(16, 185, 129, 0.75), 0.025em 0.025em 0 rgba(16, 185, 129, 0.75)',
+						transform: 'translate3d(0, 0, 0)' 
+					},
+					'15%': { 
+						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						transform: 'translate3d(0.025em, 0, 0)' 
+					},
+					'49.9%': { 
+						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						transform: 'translate3d(0, 0, 0)' 
+					},
+					'50%': { 
+						textShadow: '0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75)',
+						transform: 'translate3d(0, 0, 0)' 
+					},
+					'99.9%': { 
+						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						transform: 'translate3d(0, 0, 0)' 
+					},
+					'100%': { 
+						textShadow: '0.05em 0 0 rgba(16, 185, 129, 0.75), -0.05em -0.025em 0 rgba(16, 185, 129, 0.75)',
+						transform: 'translate3d(0, 0, 0)' 
+					},
+				},
+				'marquee': {
+					'0%': { transform: 'translateX(0%)' },
+					'100%': { transform: 'translateX(-100%)' },
+				},
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'matrix-scan': 'scan 2s linear infinite',
+				'glitch-text': 'glitch 3s infinite',
+				'marquee': 'marquee 30s linear infinite',
 			}
 		}
 	},
