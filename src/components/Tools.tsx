@@ -15,21 +15,21 @@ const tools = [
     icon: Activity,
     description: "Network protocol analyzer and packet capture",
     category: "Network Analysis",
-    color: "from-blue-500 to-cyan-500"
+    color: "from-green-500 to-emerald-500"
   },
   {
     name: "Burp Suite",
     icon: Bug,
     description: "Web application security testing platform",
     category: "Web Security",
-    color: "from-orange-500 to-red-500"
+    color: "from-green-500 to-emerald-500"
   },
   {
     name: "Security Toolkit",
     icon: Shield,
     description: "Various penetration testing and security tools",
     category: "General Security",
-    color: "from-purple-500 to-pink-500"
+    color: "from-green-500 to-emerald-500"
   }
 ];
 
@@ -38,7 +38,7 @@ const Tools = () => {
     <section className="py-20 px-4 bg-gray-900/30 relative">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
             Security Tools
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -48,7 +48,7 @@ const Tools = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {tools.map((tool, index) => (
-            <Card key={tool.name} className="bg-gray-900/70 border-gray-800 hover:border-cyan-500/50 transition-all duration-300 p-8 group hover:transform hover:scale-105 backdrop-blur-sm">
+            <Card key={tool.name} className="bg-gray-900/70 border-gray-800 hover:border-green-500/50 transition-all duration-300 p-8 group hover:transform hover:scale-105 backdrop-blur-sm">
               <div className="flex items-start space-x-6">
                 <div className={`p-4 rounded-xl bg-gradient-to-r ${tool.color} bg-opacity-20 group-hover:bg-opacity-30 transition-all duration-300`}>
                   <tool.icon className="w-8 h-8 text-white" />
@@ -56,7 +56,7 @@ const Tools = () => {
                 <div className="flex-1">
                   <div className="flex items-center justify-between mb-2">
                     <h3 className="text-2xl font-bold text-white">{tool.name}</h3>
-                    <span className="text-xs px-3 py-1 rounded-full bg-cyan-500/20 text-cyan-400 font-semibold">
+                    <span className="text-xs px-3 py-1 rounded-full bg-green-500/20 text-green-400 font-semibold">
                       {tool.category}
                     </span>
                   </div>
