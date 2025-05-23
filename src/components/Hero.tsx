@@ -1,10 +1,7 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Shield } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
       {/* Matrix-like background effect */}
       <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
       
@@ -22,9 +19,8 @@ const Hero = () => {
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 bg-clip-text text-transparent animate-fade-in">
-          Hi, I'm HEARTLIN GARDON
-        </h1>
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 bg-clip-text text-transparent animate-fade-in">Hi, I'm 
+HEARTLIN GARDON</h1>
         
         <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
           🔐 Cybersecurity Enthusiast | Ethical Hacking Learner | Python Developer
@@ -35,13 +31,12 @@ const Hero = () => {
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Button 
-            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
-            onClick={() => {
-              const projectsSection = document.getElementById('projects');
-              projectsSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
+          <Button className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105" onClick={() => {
+          const projectsSection = document.getElementById('projects');
+          projectsSection?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }}>
             View My Work
           </Button>
         </div>
@@ -58,8 +53,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
