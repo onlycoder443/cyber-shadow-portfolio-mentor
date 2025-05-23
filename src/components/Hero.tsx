@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Shield } from "lucide-react";
 const Hero = () => {
@@ -20,11 +19,13 @@ const Hero = () => {
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl mb-6 bg-gradient-to-r from-red-400 via-rose-400 to-red-400 bg-clip-text animate-fade-in text-gray-50 font-semibold">HEARTLIN GARDON</h1>
+        <h1 className="text-5xl mb-6 bg-gradient-to-r from-red-400 via-rose-400 to-red-400 bg-clip-text animate-fade-in text-gray-50 md:text-7xl font-bold">HI, I'M 
+HEARTLIN GARDON</h1>
         
-        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed text-red-600">Cybersecurity Enthusiast | Ethical Hacking Learner | Python Developer</p>
+        <p className="text-xl mb-8 max-w-2xl mx-auto leading-relaxed text-red-600 font-extrabold md:text-4xl">Cybersecurity Researcher &
+  Python Developer</p>
         
-        <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
+        <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto font-normal">
           I'm focused on learning and building in the field of cybersecurity. I enjoy working on projects related to network security, ethical hacking, and secure coding. Explore my portfolio to see what I've been working on and where I'm headed next.
         </p>
         
