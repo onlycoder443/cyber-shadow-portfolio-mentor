@@ -1,12 +1,9 @@
-
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, Shield } from "lucide-react";
-
 const Hero = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
+  return <section className="min-h-screen flex items-center justify-center px-4 relative overflow-hidden">
       {/* Matrix-like background effect */}
-      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px]" />
+      <div className="absolute inset-0 bg-grid-white/[0.02] bg-[size:50px_50px] bg-[#020e02]" />
       
       {/* Terminal-like glowing effects */}
       <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-green-500/10 rounded-full blur-3xl animate-pulse" />
@@ -22,26 +19,21 @@ const Hero = () => {
           </div>
         </div>
         
-        <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 bg-clip-text text-transparent animate-fade-in">
-          Hi, I'm HEARTLIN GARDON
-        </h1>
+        <h1 className="text-5xl md:text-7xl mb-6 bg-gradient-to-r from-green-400 via-emerald-400 to-green-400 bg-clip-text animate-fade-in text-gray-50 font-semibold">HEARTLIN GARDON</h1>
         
-        <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
-          🔐 Cybersecurity Enthusiast | Ethical Hacking Learner | Python Developer
-        </p>
+        <p className="text-xl md:text-2xl mb-8 max-w-2xl mx-auto leading-relaxed text-red-600">Cybersecurity Enthusiast | Ethical Hacking Learner | Python Developer</p>
         
         <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
           I'm focused on learning and building in the field of cybersecurity. I enjoy working on projects related to network security, ethical hacking, and secure coding. Explore my portfolio to see what I've been working on and where I'm headed next.
         </p>
         
         <div className="flex flex-wrap justify-center gap-4 mb-12">
-          <Button 
-            className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105"
-            onClick={() => {
-              const projectsSection = document.getElementById('projects');
-              projectsSection?.scrollIntoView({ behavior: 'smooth' });
-            }}
-          >
+          <Button className="bg-gradient-to-r from-green-600 to-emerald-600 hover:from-green-500 hover:to-emerald-500 text-white px-8 py-3 rounded-full transition-all duration-300 transform hover:scale-105" onClick={() => {
+          const projectsSection = document.getElementById('projects');
+          projectsSection?.scrollIntoView({
+            behavior: 'smooth'
+          });
+        }}>
             View My Work
           </Button>
         </div>
@@ -58,8 +50,6 @@ const Hero = () => {
           </a>
         </div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
